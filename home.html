@@ -38,9 +38,30 @@
             margin: 20px;
             margin-left: 100px;
         }
+
+        #foot_header{
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            margin-left: 300px;
+        }
+
+        #footer{
+            background-color: black;
+            gap: 200px;
+        }
+      
+        
         #logo{
+            color: black;
             font-family: monospace;
         }
+        #logoa{
+            text-decoration: none;
+        }
+
+        
+
         #search_bar{
            margin: 30px;
         }
@@ -69,9 +90,58 @@
             text-decoration: underline;
             cursor: pointer;
         }
+
+        .header_options2{
+            display: flex;
+            color: white;
+            /* margin: 10px; */
+            flex-direction: row;
+            height: 50px;
+            background-color: black;
+            border: 5px;
+            margin-bottom: 20px;
+        }
+        #footer_mid{
+            display: flex;
+            flex-direction: row;
+        }
+        .header_options2:hover{
+            color: wheat;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .mid_foot_text{
+            margin-left: 200px;
+            color: white;
+        }
+        .bottom_foot{
+            margin-left: 100px;
+            color: white;
+        }
+        .mid_foot_text:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .media_box{
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 20px;
+
+        }
+        #media{
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+
         .material-symbols-outlined{
             margin-top: 20px;
         }
+        
+     
+
         .header_opt_text{
            margin: 20px;
            margin-top: 5px;
@@ -141,8 +211,123 @@
       }
       .New_opt:hover{
         text-decoration: underline;
+
+      } 
+      /* MID BODY */
+      .top_body_slider{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
       }
+      .top_slider_text{
+        text-align: center;
+        background-color: rgb(110, 7, 110);
+        margin: 0px;
+        padding: 0px;
+        color: white;
+      }
+      .showcases{
+        margin-left: 200px;
+      }
+      .chosen_boxes{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+       #chosen_boxes2{
+       display: flex;
+       flex-direction: row;
+       gap: 10px;
+      }
+      .choose_box2{
+        width: 250px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding: 10px;
+        transform: translateY(10px);
+        transition: opacity 150ms ease-in, transform 150ms ease-in;
+        border-radius: 10px;
+      }
+      .choose_box2:hover{
+        cursor: pointer;
+        transform: translateY(0);
+      }
+      .choose_box2 .btn{
+        border-radius: 40px;
+        width: 50%;
+        height: 30px;
+        background-color: white;
+      }
+      .choose_box2 .btn:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+      }
+      .choose_box{
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding: 10px;
+        transform: translateY(10px);
+        transition: opacity 150ms ease-in, transform 150ms ease-in;
+      }
+      .choose_box:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translateY(0);
+      }
+      /* add */
+      .mid_ad{
+        display: flex;
+        margin-left: 300px;
+        width: 30px;
+        margin-top: 100px;
+        gap: 10px;
+      }
+      .mid_ad:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    /* line */
+    .line{
+        border: 1px;
+        border-color: black;
+        height: 1px;
+        width: 1700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: rgba(120, 120, 238, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        margin-left: 120px;
+        
+    }
+    .feature{
+        display: flex;
+        margin-left: 300px;
+        gap: 30px;
+    }
+    .chosen_boxes3{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .choose_box3{
+        width: 100px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding: 10px;
+        transform: translateY(10px);
+        transition: opacity 150ms ease-in, transform 150ms ease-in;
+        text-align: justify;
+    }
+    .choose_box3:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translateY(0);
+      }
+/* for slider */
+        
+         
+
      
+     
+
 
 
 
@@ -155,7 +340,10 @@
         </p>
     </div>
     <div id="header">
-        <div><h1 id="logo">R A V E N</h1></div>
+
+        <div><a id="logoa" href="./home.html"><h1 id="logo">R A V E N</h1></a></div>
+
+        
         <div>
            <form action="search" id="search_bar">
             <input id="search_in" type="text" class="search" placeholder=" Search">
@@ -640,13 +828,52 @@
             <div class="Dropdown">
                 <button class="link">Fragrance</button>
                 <div class="dropdown_menu">
-                    Dropdown Content
+                    Click to sign in
+           
                 </div>
             </div>
             <div class="Dropdown">
                 <button class="link">Tool & Brushes</button>
                 <div class="dropdown_menu">
-                    Dropdown Content
+
+                    <div>
+                        <a class="New_opt" href="#">All New</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Just Dropped</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">New Makeup</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">New Skincare</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">New Fragrance</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Bath & Body</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Tools & Brushes</a>
+
+                    </div>
+                    <div>
+                        <a class="New_opt" href="#">The Next Big Thing</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Bestsellers</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Quizzers & Buying Guides</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Beauty Guides</a>
+                        <br>
+                        <br>
+                        <a class="New_opt" href="#">Clean+ Planet Positive Beauty Guide</a>
+                    </div>
+                   
                 </div>
             </div>
             <div class="Dropdown">
@@ -745,28 +972,576 @@
             <div class="Dropdown">
                 <button class="link">💫Gift✨</button>
                 <div class="dropdown_menu">
-                    Dropdown Content
+
+                    Click To Sign in
+                    <img style="height: 100px; width:100px;;" src="https://static.toiimg.com/thumb/msid-88344557,width-1070,height-580,imgsize-20332,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="">
+
                 </div>
             </div>
             <div class="Dropdown">
                 <button class="link">Beauty Under $20</button>
                 <div class="dropdown_menu">
-                    Dropdown Content
+                    Click To Sign in
+
                 </div>
             </div>
             <div class="Dropdown">
                 <button class="link">Sale & Offers</button>
                 <div class="dropdown_menu">
-                    Dropdown Content
+                    Click To Sign in
+                    
+
                 </div>
             </div>
             
         </div>
     </nav>
-    <div>
-        <img src="https://www.sephora.com/contentimages/2022-12-06-slotting-gifts-by-price-site-rwd-hp-hero-banner-4-product-english-us-handoff_01.jpg?imwidth=545" alt="">
-   
 
+    <!-- top body -->
+    <div id="body_top">
+        <div class="top_body_slider">
+            <div class="top_slider_text">
+                <img src="https://www.sephora.com/contentimages/2022-12-06-slotting-gifts-by-price-site-rwd-hp-hero-banner-4-product-english-us-handoff_01.jpg?imwidth=545" alt="">
+                    <h1>
+                        20% Off* Full-Size Fragrance
+                    </h1>
+                    <p>
+                        December 13-24 with code FRAGRANCES20. *Exlusions/items applt.
+                    </p>
+                    <h3>SHOP NOW ▸</h3>
+            </div>
+            <div style="background-color: rgb(70, 8, 129);" class="top_slider_text">
+                <img src="https://www.sephora.com/contentimages/2022-12-20off-frag-site-home-page-hero-banner.jpg?imwidth=545" alt="">
+                    <h1>
+                        20% Off* Full-Size Fragrance
+                    </h1>
+                    <p>
+                        December 13-24 with code FRAGRANCES20. *Exlusions/items applt.
+                    </p>
+                    <h3>SHOP NOW ▸</h3>
+            </div>
+            <div style="background-color: rgb(14, 156, 203);" class="top_slider_text">
+                <img src="https://www.sephora.com/contentimages/2022-12-02-slotting-just-arrived-v4-standard-site-rwd-home-page-hero-banner-US_01-handoff.jpg?imwidth=545" alt="">
+                    <h1>
+                        20% Off* Full-Size Fragrance
+                    </h1>
+                    <p>
+                        December 13-24 with code FRAGRANCES20. *Exlusions/items applt.
+                    </p>
+                    <h3>SHOP NOW ▸</h3>
+            </div>
+        </div>
+        <div class="showcases">
+            <h2>Choose For You</h2>
+                    <div class="chosen_boxes">
+                        <div class="choose_box">
+                            <img src="https://www.sephora.com/productimages/sku/s2335198-main-zoom.jpg?imwidth=166" alt="">
+                            <h3>ILIA</h3>
+                            <p>Limitless Lash Lengthening Clean...</p>
+                        </div>
+                        <div class="choose_box">
+                            <img src="https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?pb=2020-03-allure-readers-choice-2019&imwidth=166" alt="">
+                            <h3>LANEIGE</h3>
+                            <p>Lip Sleeping Mask Intense Hydration With Vitamin C</p>
+                        </div>
+                        <div class="choose_box">
+                            <img src="https://www.sephora.com/productimages/sku/s2475259-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                            <h3>ILIA</h3>
+                            <p>Fullest Volumizinng Mascara</p>
+                        </div>
+                        <div class="choose_box">
+                            <img src="https://www.sephora.com/productimages/sku/s2333771-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166" alt="">
+                            <h3>Kosas</h3>
+                            <p>Revealer Super Creamy + Brightening Concealer a...</p>
+                        </div>
+                        <div class="choose_box">
+                            <img src="https://www.sephora.com/productimages/sku/s2495497-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                            <h3>Summer Fridays</h3>
+                            <p>Lip Butter Balm</p>
+                        </div>
+                        <div class="choose_box">
+                            <img src="https://www.sephora.com/productimages/sku/s2609469-main-zoom.jpg?imwidth=166" alt="">
+                            <h3>Sephora Favorites</h3>
+                            <p>Spaekly Clean Makeup Set</p>
+                        </div>
+                    </div>
+        </div>
+        <div class="showcases">
+            <h2>Just Drop</h2>
+            <div class="chosen_boxes">
+                <div class="choose_box">
+                    <img src="https://www.sephora.com/productimages/sku/s2599652-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                    <h3>The INKEY List</h3>
+                    <p>Winter Kin 101</p>
+                </div>
+                <div class="choose_box">
+                    <img src="https://www.sephora.com/productimages/sku/s2616563-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                    <h3>Peace Out</h3>
+                    <p>Salicylic Acid Acne Healing Dots Mega Pack</p>
+                </div>
+                <div class="choose_box">
+                    <img src="https://www.sephora.com/productimages/sku/s2618981-main-zoom.jpg?imwidth=166" alt="">
+                    <h3>Natasha Denona</h3>
+                    <p>Retro Glam Eyeshadow</p>
+                </div>
+                <div class="choose_box">
+                    <img src="https://www.sephora.com/productimages/sku/s2613289-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                    <h3>SKYLAR</h3>
+                    <p>Peach fields Eau de Perfum</p>
+                </div>
+                <div class="choose_box">
+                    <img src="https://www.sephora.com/productimages/sku/s2614741-main-zoom.jpg?imwidth=166" alt="">
+                    <h3>Anastasia Baverly Hills</h3>
+                    <p>Clear Favorittes full-Sized & Mini Brow Duo</p>
+                </div>
+                <div class="choose_box">
+                    <img src="https://www.sephora.com/productimages/sku/s2600237-main-zoom.jpg?imwidth=166" alt="">
+                    <h3>VOLUSPA</h3>
+                    <p>Holiday Mini Tin Trio Set</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 120px;" class="showcases">
+            <h2>Beauty Offers(11)ped</h2>
+            <din id="chosen_boxes2">
+                
+                <div  class="choose_box2">
+                    <img style="width: 100%;" src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-same-day-delivery-site-desktop-mobile-app-beauty-offers-page-banner-existing-client-us-can-final.jpg?imwidth=240" alt="">
+                    <h3>Don’t Miss FREE Same-Delivery‡‡</h3>
+                    <p>It’s not too late to get those last-minute gifts! Use code FREESAMEDAY.</p>
+                    <p>Beauty Insider members only.
+                        Online only • Ends 12/24/2022
+                        ‡‡Exclusions/terms apply.
+                        Shop Gifts
+                        </p>
+                        <button class="btn">Show Gifts</button>
+                </div>
+                <div  class="choose_box2">
+                    <img style="width: 100%;" src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-12-13-20off-frag-site-desktop-mobile-app-beauty-offers-page-banner-1000x750-us.jpg?imwidth=240" alt="">
+                    <h3>Get 20% off‡ Full-Size Fragrances
+                    </h3>
+                    <p>December 13–24. Use code FRAGRANCE20. One time only.</p>
+                    <p>Beauty Insider members only.
+                        In store & online • Ends 12/25/2022
+                        ‡Exclusions/terms apply.
+                        </p>
+                        <button class="btn">Show Gifts</button>
+                </div>
+                <div  class="choose_box2">
+                    <img style="width: 100%;" src="https://www.sephora.com/contentimages/promo/freeship2021/2022-08-01-free-ship-site-beauty-offers-page-banner-us-can-final.jpg?imwidth=240" alt="">
+                    <h3>Beauty Insiders Get Free Shipping
+                    </h3>
+                    <p>It’s fast, reliable, and applies to every order.†</p>
+                    <p>No code needed • Not a Beauty Insider member? 
+                        Beauty Insider members only.
+                        †Exclusions/terms apply.
+                        </p>
+                        <button class="btn">Show Gifts</button>
+                </div>
+                <div  class="choose_box2">
+                    <img style="width: 100%;" src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-12-08-WATCH-YA-TONE-DLX-SAMPLE-site-beauty-offers-banner-1000x750.jpg?imwidth=240" alt="">
+                    <h3>Free FENTY SKIN Trial Size
+                    </h3>
+                    <p>Visibly even skin tone with the new Watch Ya Tone 5% Niacinamide Dark Spot Serum with Vitamin C.</p>
+                    <p>Free with $25 purchase.*
+                        Beauty Insider members only.
+                        Online only
+                        *Exclusions/terms apply. 
+                        </p>
+                        <button class="btn">Show Gifts</button>
+                </div>
+                <div  class="choose_box2">
+                    <img style="width: 100%;" src="https://www.sephora.com/contentimages/promo/beautyoffers/2022/November/2022-holiday-cyberbag-site-desktop-mobile-app-beauty-offers-banner-1000x750.jpg?imwidth=240" alt="">
+                    <h3>Get a Free Sample Bag 
+                    </h3>
+                    <p>Treat yourself to one of four bags packed full of trial sizes..</p>
+                    <p>*Free with $85 purchase
+                        Beauty Insider members only.
+                        Online only
+                        Exclusions/terms apply. While supplies last.
+                        </p>
+                        <button class="btn">Show Gifts</button>
+                </div>
+            </div>
+            </div>
+        </din>
+        </div>
+        <br>
+       <div>
+        <div class="mid_ad">
+            <div class="top_slider_text">
+                <h1>
+                    Perfect Presents under $25
+                </h1>
+                <p>
+                    Everyone will love unwrapping these makeup and skincare essentials.
+                </p>
+                <h3>SHOP NOW ▸</h3>
+                <img src="https://www.sephora.com/contentimages/2022-12-1-sc-sku-site-desktop-mweb-home-page-rwd-marketing-banner-launch-1-800x256-en-us-can.jpg?imwidth=400" alt="">
+                   
+            </div>
+            <div style="background-color: rgb(70, 8, 129);" class="top_slider_text">
+                <h1>
+                    Get Your Gifts in Time
+                </h1>
+                <p>
+                    Choose free shipping and order by 6am ET 12/20 to receive by 12/24.
+                </p>
+                <h3>LEARN MOR</h3>
+                <img src="https://www.sephora.com/contentimages/2022-12-05-holiday-der-b-launch-site-mobile-desktop-home-page-rwd-marketing-banner-ldts-mockup-us-2869-release-800x256.jpg?imwidth=400" alt="">
+                   
+            </div>
+            <div style="background-color: rgb(14, 156, 203);" class="top_slider_text">
+                <h1>
+                    Get Gift Advice ASAP
+                </h1>
+                <p>
+                    Chat live with a Beauty Advisor for personalized recs.
+                </p>
+                <h3>LET'S CHAT▸</h3>
+                <img src="https://www.sephora.com/contentimages/2022-holiday-launch-bun-d-site-mobile-desktop-marketing-banner-rwd-live-chat-us-can-800x256.jpg?imwidth=400" alt="">
+                   
+            </div>
+        </div>
+       </div>
+       <br>
+       <div class="showcases">
+        <h2>Selling Fast</h2>
+                <div class="chosen_boxes">
+                    <div class="choose_box">
+                        <img src="https://www.sephora.com/productimages/sku/s2181006-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                        <h1>#1</h1>
+                        <h3>Tatcha</h3>
+                        <p>The Dewy Skin Cream Plumping & Hydrating..</p>
+                    </div>
+                    <div class="choose_box">
+                        <img src="https://www.sephora.com/productimages/sku/s2619310-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166" alt="">
+                        <h1>#2</h1>
+                        <h3>Glow Recipe</h3>
+                        <p>Hey You, YOu're Glowing Watermelon Set</p>
+                    </div>
+                    <div class="choose_box">
+                        <img src="https://www.sephora.com/productimages/sku/s2518934-main-zoom.jpg?imwidth=166" alt="">
+                        <h1>#3</h1>
+                        <h3>Selena Gomez Beauty</h3>
+                        <p>Warm Wshes Effortless Bronzer Sticks</p>
+                    </div>
+                    <div class="choose_box">
+                        <img src="https://www.sephora.com/productimages/sku/s2031391-main-zoom.jpg?imwidth=166" alt="">
+                        <h1>#4</h1>
+                        <h3>Tatcha</h3>
+                        <p>The Rice Wash Skin Softening Cleanser</p>
+                    </div>
+                    <div class="choose_box">
+                        <img src="https://www.sephora.com/productimages/sku/s2382232-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166" alt="">
+                        <h1>#5</h1>
+                        <h3>The Ordinary</h3>
+                        <p>Niacinamide 10% + 1% Oil Control</p>
+                    </div>
+                    <div class="choose_box">
+                        <img src="https://www.sephora.com/productimages/sku/s2555811-main-zoom.jpg?imwidth=166" alt="">
+                        <h1>#6</h1>
+                        <h3>HUDA BEAUTY</h3>
+                        <p>Easy Bake LOose Baking</p>
+                    </div>
+                </div>
+    </div>
+    <br>
+    <div class="line">
+    </div>
+    <br>
+
+    <div class="feature">
+        <div>
+            <h2>Featured Catefories</h2>
+            <p>Shop what's popular now.</p>
+        </div>
+        <div> <div class="chosen_boxes3">
+                    <div class="choose_box3">
+                        <p>Gifts & Value Sets</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/092022/Homepage/RWD/gifts%2032@3x.png?imwidth=53" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>LUXURY Skincare</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/luxury_beauty.svg" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>Makeup Under $25</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/100422/Homepage/RWD/under25%2032@3x.jpg?imwidth=53" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <!-- hererehrherhwha;kljshioryhwoiritfhwkldhf -->
+                        <p>Moisturizer</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_skincare_cleanser_moisturizer_us_ca_rwd_slice.jpg?imwidth=53" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>Hair Styling & Treatments</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/091322/Homepage/RWD/hair%20dryer.JPG?imwidth=53" alt="">
+                       
+                    </div>
+                    <div class="choose_box3">
+                        <p>Perfume</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_fragrance_bottle_us_ca_rwd_slice.jpg?imwidth=53" alt="">
+                    </div>
+                    <div class="choose_box3">
+                        <p>Sephora Collection</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_sephoracollection_SC_us_ca_rwd_slice.jpg?imwidth=53" alt="">
+                    </div>
+                    <div class="choose_box3">
+                        <p>Jumbos</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png?imwidth=53" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+    <div class="line">
+    </div>
+    <br>
+    <div class="feature">
+        <div>
+            <h2>Need a Little Guidance?</h2>
+            <p>Check out our quizzes and buying guides.</p>
+        </div>
+        <div> <div class="chosen_boxes3">
+                    <div class="choose_box3">
+                        <p>Holiday Guide</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>Gifting Quiz</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/gift_finder.svg" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>Foundation Quiz</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/foundation_guide.svg" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>Skincare Routine Builder
+                        </p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_age.svg" alt="">
+                        
+                    </div>
+                    <div class="choose_box3">
+                        <p>Shiny Hair Guide</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_healthy%20scalp%20guide_us_ca_rwd_slice.png?imwidth=53" alt="">
+                       
+                    </div>
+                    <div class="choose_box3">
+                        <p>Fragrance Hub</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/niche_fragrances.svg" alt="">
+                    </div>
+                    <div class="choose_box3">
+                        <p>Clinical Skincare</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_quiz.svg" alt="">
+                    </div>
+                    <div class="choose_box3">
+                        <p>Black-Owned Brands</p>
+                        <img style="height: 50px; margin-left: 55px;" src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_BOB_us_rwd_slice.png?imwidth=53" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+    <div class="line">
+    </div>
+    <br>
+    <div class="mid_ad">
+        <div class="top_slider_text">
+            <h1>
+               
+Our Commitment to Diversity, Equity & Inclusion 
+            </h1>
+            
+            <h3>LEARN MORE▸</h3>
+            <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/homepage-reassurance-banner-diversity-inclusion-desktop-mobile-us-ca-slice.jpeg?imwidth=400" alt="">
+               
+        </div>
+        <div style="background-color: rgb(70, 8, 129);" class="top_slider_text">
+            <h1>
+                Get Your Gifts in Time
+            </h1>
+            <p>
+                Fast and easy options for stress-free holiday shopping. 
+            </p>
+            <h3>LEARN MORE▸</h3>
+            <img src="https://www.sephora.com/contentimages/2022-12-05-holiday-der-b-launch-site-mobile-desktop-home-page-rwd-marketing-banner-ldts-mockup-us-2869-release-800x256.jpg?imwidth=400" alt="">
+               
+        </div>
+        <div style="background-color: rgb(14, 156, 203);" class="top_slider_text">
+            <h1>
+                Clean + Planet Positive
+            </h1>
+            <p>
+                Brands on a mission to change your skin and the earth.
+            </p>
+            <h3>LEARN MORE▸</h3>
+            <img src="https://www.sephora.com/contentimages/2022-holiday-launch-bun-d-site-mobile-desktop-marketing-banner-rwd-live-chat-us-can-800x256.jpg?imwidth=400" alt="">
+               
+        </div>
+    </div>
+    </div>
+      <!-- footers -->
+<div id="footer">
+    <div id="foot_header">
+       
+       
+        <div>
+           <button class="header_options2">
+            <span style="color: white;" class="material-symbols-outlined">
+                pin_drop
+                </span>
+                <div class="header_opt_text">
+                     <h4>Find a Store</h4><p>Choose Your Store</p>
+                </div>
+           </button>
+        </div>
+        <div>
+            <button class="header_options2">
+                <span style="color: white;" class="material-symbols-outlined">
+                    quick_phrases
+                    </span>
+                <div class="header_opt_text">
+                     <h4>Live Beauty Help</h4><p>Available</p>
+                </div>
+           </button>
+           </div>
+           <div>
+            <button class="header_options2">
+                <span style="color: white;" class="material-symbols-outlined">
+                    quick_phrases
+                    </span>
+                <div class="header_opt_text">
+                     <h4>Live Beauty Help</h4><p>Available</p>
+                </div>
+           </button>
+           </div>
+    
+           <div>
+            <button class="header_options2">
+                <span style="color: white;" class="material-symbols-outlined">
+                    apps
+                    </span>
+                <div class="header_opt_text">
+                     <h4>Get App</h4><p>Text "APP" to 36681</p>
+                </div>
+           </button>
+           </div>
+    
+    
+           <div>
+            <button class="header_options2">
+                <span style="color: white;" class="material-symbols-outlined">
+                    web_asset
+                    </span>
+                <div class="header_opt_text">
+                     <h4>Sephora Credit Card Program</h4><p>Want 50% off?</p>
+                </div>
+           </button>
+           </div>
+            
+        </div>
+<br>
+        <div id="footer_mid">
+            <div>
+                <h3 class="mid_foot_text">About Sephora</h3>
+                <p class="mid_foot_text">About Sephora</p>
+                <p class="mid_foot_text">Newsroom</p>
+                <p class="mid_foot_text">Carees</p>
+                <p class="mid_foot_text">Sephora Values</p>
+                <p class="mid_foot_text">Supply Chain Transparency
+                </p>
+                <p class="mid_foot_text">Affiliates</p>
+                <p class="mid_foot_text">Sephora Events</p>
+                <p class="mid_foot_text">Gift Cards</p>
+                <p class="mid_foot_text">Sephora Global Sites</p>
+                <p class="mid_foot_text">Diversity, Equity & Inclusion</p>
+                <p class="mid_foot_text">Checkout on Instagram</p>
+                <p class="mid_foot_text">Sephora Accelerate</p>
+                <p class="mid_foot_text">Report a Vulnerability</p>
+            </div>
+            <div>
+                <h3 class="mid_foot_text">My sephora</h3>
+                <p class="mid_foot_text">Beauty Insider
+                </p>
+                <p class="mid_foot_text">Sephora Credit Card</p>
+                <p class="mid_foot_text">Community Profile</p>
+                <p class="mid_foot_text">Order Status</p>
+                <p class="mid_foot_text">Purchase History</p>
+                <p class="mid_foot_text">Account Settings</p>
+                <p class="mid_foot_text">Beauty Advisor Recommendations</p>
+                <p class="mid_foot_text">Beauty Offers</p>
+                <p class="mid_foot_text">Quizzes & Buying Guides</p>
+                <p class="mid_foot_text">Rewards Bazaar
+                </p>
+                <p class="mid_foot_text">Loves</p>
+                <p class="mid_foot_text">BOOK a Reservation</p>
+            </div>
+            <div>
+                <h3 class="mid_foot_text">Help</h3>
+                <p class="mid_foot_text">Customer Service</p>
+                <p class="mid_foot_text">Returns & Exchanges</p>
+                <p class="mid_foot_text"></p>
+                <p class="mid_foot_text">Shipping</p>
+                <p class="mid_foot_text">Billing</p>
+                <p class="mid_foot_text">International Shipments</p>
+                <p class="mid_foot_text">Beauty Services FAQ</p>
+                <p class="mid_foot_text">Sephora at Kohl's</p>
+                <p class="mid_foot_text">Sephora Inside JCPenney</p>
+                <p class="mid_foot_text">Store Locations</p>
+                <p class="mid_foot_text">Online Ordering</p>
+                <p class="mid_foot_text">Klarna & Afterpay</p>
+                <p class="mid_foot_text">Accessibility</p>
+
+            </div>
+            <div>
+                <h1 style="margin: 200px;" class="mid_foot_text">We Belong to Something Beautiful</h1>
+            </div>
+        </div>
+        <br>
+
+        <div id="footer_bottom">
+            <div>
+                <p class="bottom_foot">© 2022 Sephora USA, Inc. All rights reserved.</p>
+                <p class="bottom_foot">Privacy Policy  Terms of Use   Accessibility  Sitemap  Your Privacy Choices</p>
+                <p class="bottom_foot">1-877-737-4672    TTY: 1-888-866-9845</p>
+            </div>
+            <div id="media">
+                <div class="media_box">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemqOP0CmvkrYy554o_nJEyc2IddUbAVxMRQ&usqp=CAU" alt="">
+                </div>
+                <div class="media_box">
+                    <img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670__340.png" alt="">
+                </div>
+                <div class="media_box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgv2Su0x3ICDaY4RZjOlMXSmpbyPppVTMNFQ&usqp=CAU" alt="">
+                </div>
+                <div class="media_box">
+                    <img src="https://brandslogos.com/wp-content/uploads/images/youtube-icon-logo-vector.svg" alt="">
+                </div>
+                <div class="media_box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXcmv8z7sSaVE_vgjjPYTHmfYb6y9c2gkiGrJ4Htx9c9jdMqIsdx5Yhj4Pbryr5whvDQ&usqp=CAU" alt="">
+                </div>
+                <div class="media_box">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-logo.png" alt="">
+                </div>
+                <div class="media_box">
+                    <img src="https://seeklogo.com//images/T/tiktok-app-icon-logo-0F5AD7AE01-seeklogo.com.png" alt="">
+                </div>
+             
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 </body>
 <script>
 
