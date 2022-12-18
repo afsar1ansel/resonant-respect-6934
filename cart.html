@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bascket</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <style>
-         #top_purple{
+</head>
+<style>
+    /* head */
+    #top_purple{
             background-color: rgb(79, 15, 109);
             display: flex;
             flex-direction: column;
@@ -29,13 +31,35 @@
         #top_purple_text:hover{
             text-decoration: underline;
         }
-        #header{
+
+  #header{
             display: flex;
             align-items: center;
             margin: 20px;
             margin-left: 100px;
         }
-        #logo{
+
+.header_options{
+            display: flex;
+            /* margin: 10px; */
+            flex-direction: row;
+            height: 50px;
+            background-color: white;
+            border: 5px;
+            margin-bottom: 20px;
+        }
+        .header_options:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+ .header_opt_text{
+           margin: 20px;
+           margin-top: 5px;
+           line-height: 2px;
+        }
+
+ #logo{
             color: black;
             font-family: monospace;
         }
@@ -43,7 +67,7 @@
             text-decoration: none;
         }
 
-        #search_bar{
+  #search_bar{
            margin: 30px;
         }
         #search_in{
@@ -58,28 +82,8 @@
             border: 0px;
             height: 25px;
         }
-        .header_options{
-            display: flex;
-            /* margin: 10px; */
-            flex-direction: row;
-            height: 50px;
-            background-color: white;
-            border: 5px;
-            margin-bottom: 20px;
-        }
-        .header_options:hover{
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        .material-symbols-outlined{
-            margin-top: 20px;
-        }
-        .header_opt_text{
-           margin: 20px;
-           margin-top: 5px;
-           line-height: 2px;
-        }
-        #nav_bar{
+
+ #nav_bar{
             background-color: black;
         }
        .Dropdown button{
@@ -144,68 +148,69 @@
       .New_opt:hover{
         text-decoration: underline;
       }
-     
-     
-          .popup{
+       .material-symbols-outlined{
+            margin-top: 20px;
+        }
+    /* body */
+    #for_upper{
+        display: flex;
+        margin-bottom: 120px;
+        gap: 300px;
+    }
 
-           margin-left: 40%;
-
-            transform: translate(-50% -50%) scale(1.25);
-            width: 380px;
-            padding: 20px 30px;
-            background: #fff;
-            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-            border-radius: 10px; 
-        }
-      
-        .popup .form h2{
-            text-align: center;
-        }
-        .popup .form .form_element{
-            margin: 15px 0px;
-        }
-        .popup .form .form_element label{
-            font-size: 14px;
-            color: #222;
-
-        }
-        .popup .form .form_element input[type="text"],
-        .popup .form .form_element input[type="password"]{
-            margin-top: 5px;
-            display: block;
-            width: 100%;
-            padding: 10px;
-            /* outline: none; */
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
-        .popup .form .form_element input[type="checkbox"]{
-            margin-right: 5px;
-        }
-        .popup .form .form_element button{
-            width: 100%;
-            height: 40px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-            background-color: #222;
-            color: #aaa;
-            border-radius: 20px;
-            cursor: pointer;
-
-        }
-        .popup .form .form_element a{
-            display: block;
-            text-align: right;
-            font-size: 15px;
-            color: #1a79ca;
-            text-decoration: none;
-            font-weight: 600;
-
-        }
-
-        /* footer */
-        #foot_header{
+    #credit_card{
+        display: flex;
+        margin-left: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width: 600px;
+        padding: 10px;
+    }
+  
+    #fav_credit_btn{
+      background-color: white;
+      border-radius: 40px;
+      width: 90px;
+    }
+    #fav_credit_btn:hover{
+        background-color: black;
+        color: white;
+    }
+    #bascket{
+       width: 50%;
+       margin:0px;
+       padding: 0px;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    #assistance{
+        width: 300px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        
+    }
+    .card{
+        margin: auto;
+        height: 400px;
+        width: 3opx;
+    }
+    #bascket img{
+        height: 40%;
+    }
+    #card_img_div{
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .card_img{
+        width: 33px;
+        height: 26px;
+    }
+    #low{
+        margin-left: 30%;
+    }
+    /* foot */
+    #foot_header{
             display: flex;
             align-items: center;
             margin: 20px;
@@ -261,9 +266,7 @@
             flex-direction: row-reverse;
 
         }
-
-    </style>
-</head>
+</style>
 <body>
     <div id="top_purple">
         <p>
@@ -271,9 +274,7 @@
         </p>
     </div>
     <div id="header">
-
         <div><a id="logoa" href="./home.html"><h1 id="logo">R A V E N</h1></a></div>
-
         <div>
            <form action="search" id="search_bar">
             <input id="search_in" type="text" class="search" placeholder=" Search">
@@ -333,27 +334,19 @@
             </button>
          </div>
          <div>
-
-            <a style="text-decoration: none;" href="./cart.html"> 
-                <button class="header_options">
-
+            <button class="header_options">
                 <span class="material-symbols-outlined">
                     shopping_bag
                     </span>
             </button>
-
-        </a>
-
          </div>
+        
     </div>
-    
     <nav id="nav_bar">
         <div id="nav_holder">
             <div class="Dropdown">
-
                 <a class="link" href="./product.html">
                 <button class="link">New</button></a>
-
                 <div class="dropdown_menu">
                     <div>
                         <a class="New_opt" href="#">All New</a>
@@ -401,10 +394,8 @@
                 </div>
             </div>
             <div class="Dropdown">
-
                 <a class="link" href="./product.html">
                 <button class="link">Brand</button></a>
-
                 <div class="dropdown_menu">
                     <div>
                         <a class="New_opt" href="#"><h4>Brands A-Z</h4></a>
@@ -770,18 +761,15 @@
             <div class="Dropdown">
                 <button class="link">Fragrance</button>
                 <div class="dropdown_menu">
-
                     Click to sign in
                     <div>
                         <img class="New_img" src="https://www.sephora.com/contentimages/meganav/large/2020-12-23-site-dt-botnav-seph-coll-US.jpg?imwidth=294" alt="">
                     </div>
-
                 </div>
             </div>
             <div class="Dropdown">
                 <button class="link">Tool & Brushes</button>
                 <div class="dropdown_menu">
-
                     <div>
                         <a class="New_opt" href="#">All New</a>
                         <br>
@@ -819,7 +807,6 @@
                         <br>
                         <a class="New_opt" href="#">Clean+ Planet Positive Beauty Guide</a>
                     </div>
-
                 </div>
             </div>
             <div class="Dropdown">
@@ -910,7 +897,6 @@
                     <div>
                         <img class="New_img" src="https://www.sephora.com/contentimages/2022-holiday-launch-general-site-desktop-global-navigation-button-minis-us-can-release.jpg?imwidth=590" alt="">
                     </div>
-
                     
                 </div>
             </div>
@@ -934,195 +920,258 @@
                 <button class="link">Sale & Offers</button></a>
                 <div class="dropdown_menu">
                     Click To Sign in
-
                 </div>
             </div>
             
         </div>
     </nav>
-    <div class="dropdown_sign">
-        <div>
-               <div class="popup">
-                   <!-- <div class="close_btn">&times;</div> -->
-                   <div class="form">
-                       <h2>sign in</h2>
-                       <div class="form_element">
-                           <label for="email">Email</label>
-                           <input type="text" id="email" placeholder="Your Email">
-                           <div class="form_element">
-                               <label for="password">Password</label>
-                               <input type="password" id="password" placeholder="Your Password">
-                           </div>
-                           <div class="form_element">
-                               <input type="checkbox" id="remmember_me" >
-                               <label for="remmember_me">Keep me sign in</label>
-                           </div>
-                           <div class="form_element">
-                               <button>Sign In</button>
-                           </div>
-                           <div class="form_element">
-                               <a href="#">forgot password</a>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-        </div>
-   </div>
-
-
-   <!-- footers -->
-   <br>
-   <div id="footer">
-    <div id="foot_header">
-       
-       
-        <div>
-           <button class="header_options2">
-            <span style="color: white;" class="material-symbols-outlined">
-                pin_drop
-                </span>
-                <div class="header_opt_text">
-                     <h4>Find a Store</h4><p>Choose Your Store</p>
-                </div>
-           </button>
-        </div>
-        <div>
-            <button class="header_options2">
-                <span style="color: white;" class="material-symbols-outlined">
-                    quick_phrases
-                    </span>
-                <div class="header_opt_text">
-                     <h4>Live Beauty Help</h4><p>Available</p>
-                </div>
-           </button>
-           </div>
-           <div>
-            <button class="header_options2">
-                <span style="color: white;" class="material-symbols-outlined">
-                    quick_phrases
-                    </span>
-                <div class="header_opt_text">
-                     <h4>Live Beauty Help</h4><p>Available</p>
-                </div>
-           </button>
-           </div>
-    
-           <div>
-            <button class="header_options2">
-                <span style="color: white;" class="material-symbols-outlined">
-                    apps
-                    </span>
-                <div class="header_opt_text">
-                     <h4>Get App</h4><p>Text "APP" to 36681</p>
-                </div>
-           </button>
-           </div>
-    
-    
-           <div>
-            <button class="header_options2">
-                <span style="color: white;" class="material-symbols-outlined">
-                    web_asset
-                    </span>
-                <div class="header_opt_text">
-                     <h4>Sephora Credit Card Program</h4><p>Want 50% off?</p>
-                </div>
-           </button>
-           </div>
-            
-        </div>
-<br>
-        <div id="footer_mid">
-            <div>
-                <h3 class="mid_foot_text">About Sephora</h3>
-                <p class="mid_foot_text">About Sephora</p>
-                <p class="mid_foot_text">Newsroom</p>
-                <p class="mid_foot_text">Carees</p>
-                <p class="mid_foot_text">Sephora Values</p>
-                <p class="mid_foot_text">Supply Chain Transparency
-                </p>
-                <p class="mid_foot_text">Affiliates</p>
-                <p class="mid_foot_text">Sephora Events</p>
-                <p class="mid_foot_text">Gift Cards</p>
-                <p class="mid_foot_text">Sephora Global Sites</p>
-                <p class="mid_foot_text">Diversity, Equity & Inclusion</p>
-                <p class="mid_foot_text">Checkout on Instagram</p>
-                <p class="mid_foot_text">Sephora Accelerate</p>
-                <p class="mid_foot_text">Report a Vulnerability</p>
-            </div>
-            <div>
-                <h3 class="mid_foot_text">My sephora</h3>
-                <p class="mid_foot_text">Beauty Insider
-                </p>
-                <p class="mid_foot_text">Sephora Credit Card</p>
-                <p class="mid_foot_text">Community Profile</p>
-                <p class="mid_foot_text">Order Status</p>
-                <p class="mid_foot_text">Purchase History</p>
-                <p class="mid_foot_text">Account Settings</p>
-                <p class="mid_foot_text">Beauty Advisor Recommendations</p>
-                <p class="mid_foot_text">Beauty Offers</p>
-                <p class="mid_foot_text">Quizzes & Buying Guides</p>
-                <p class="mid_foot_text">Rewards Bazaar
-                </p>
-                <p class="mid_foot_text">Loves</p>
-                <p class="mid_foot_text">BOOK a Reservation</p>
-            </div>
-            <div>
-                <h3 class="mid_foot_text">Help</h3>
-                <p class="mid_foot_text">Customer Service</p>
-                <p class="mid_foot_text">Returns & Exchanges</p>
-                <p class="mid_foot_text"></p>
-                <p class="mid_foot_text">Shipping</p>
-                <p class="mid_foot_text">Billing</p>
-                <p class="mid_foot_text">International Shipments</p>
-                <p class="mid_foot_text">Beauty Services FAQ</p>
-                <p class="mid_foot_text">Sephora at Kohl's</p>
-                <p class="mid_foot_text">Sephora Inside JCPenney</p>
-                <p class="mid_foot_text">Store Locations</p>
-                <p class="mid_foot_text">Online Ordering</p>
-                <p class="mid_foot_text">Klarna & Afterpay</p>
-                <p class="mid_foot_text">Accessibility</p>
-
-            </div>
-            <div>
-                <h1 style="margin: 200px;" class="mid_foot_text">We Belong to Something Beautiful</h1>
-            </div>
-        </div>
+    <!-- body -->
+    <div>
+        <h1 style="text-align: center; margin: 30px;">My basket</h1>
         <br>
-
-        <div id="footer_bottom">
-            <div>
-                <p class="bottom_foot">© 2022 Sephora USA, Inc. All rights reserved.</p>
-                <p class="bottom_foot">Privacy Policy  Terms of Use   Accessibility  Sitemap  Your Privacy Choices</p>
-                <p class="bottom_foot">1-877-737-4672    TTY: 1-888-866-9845</p>
+        <div id="for_upper">
+            <div id="credit_card">
+                <div>
+                    <h4>The sephora Credit Card Program</h4>
+                    <div style="margin-left: 80%;">
+                        <button id="fav_credit_btn">Details</button>
+                    </div>
+                    <div style="display: flex;">
+                        <span style="margin: 10px;" class="material-symbols-outlined">
+                            credit_card
+                            </span>
+                            <p>Save 25% on this orde when you open and use either sephora Credit Card today*</p>
+                    </div>
+                </div>
+             </div>
+             <div id="assistance">
+                <h3>Need assistance?</h3>
+                <p>1-8877-SEPHORA(1-888-866-9845)</p>
+                <a style="text-decoration: none; color: #000;" href="#">we accept</a>
+                <div id="card_img_div">
+                    <img class="card_img" src="https://www.sephora.com/img/ufe/payments/sephora.svg" alt="">
+                    <img class="card_img" src="	https://www.sephora.com/img/ufe/payments/payPal.svg" alt="">
+                    <img class="card_img" src="	https://www.sephora.com/img/ufe/payments/visa.svg" alt="">
+                    <img class="card_img" src=	"https://www.sephora.com/img/ufe/payments/masterCard.svg" alt="">
+                    <img class="card_img" src="	https://www.sephora.com/img/ufe/payments/discover.svg" alt="">
+                    <img class="card_img" src="	https://www.sephora.com/img/ufe/payments/americanExpress.svg" alt="">
+                </div>
             </div>
-            <div id="media">
-                <div class="media_box">
-                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemqOP0CmvkrYy554o_nJEyc2IddUbAVxMRQ&usqp=CAU" alt="">
+               
+        </div>
+      
+
+    </div>
+   <div id="low">
+    <div style="display: flex;"> <h1>Get It Shipped  :
+        <span id="cart_total">0</span></h1></div>
+   
+    <div id="bascket">
+        
+    </div>
+   </div>
+    <!-- foot -->
+    <div id="footer">
+        <div id="foot_header">
+           
+           
+            <div>
+               <button class="header_options2">
+                <span style="color: white;" class="material-symbols-outlined">
+                    pin_drop
+                    </span>
+                    <div class="header_opt_text">
+                         <h4>Find a Store</h4><p>Choose Your Store</p>
+                    </div>
+               </button>
+            </div>
+            <div>
+                <button class="header_options2">
+                    <span style="color: white;" class="material-symbols-outlined">
+                        quick_phrases
+                        </span>
+                    <div class="header_opt_text">
+                         <h4>Live Beauty Help</h4><p>Available</p>
+                    </div>
+               </button>
+               </div>
+               <div>
+                <button class="header_options2">
+                    <span style="color: white;" class="material-symbols-outlined">
+                        quick_phrases
+                        </span>
+                    <div class="header_opt_text">
+                         <h4>Live Beauty Help</h4><p>Available</p>
+                    </div>
+               </button>
+               </div>
+        
+               <div>
+                <button class="header_options2">
+                    <span style="color: white;" class="material-symbols-outlined">
+                        apps
+                        </span>
+                    <div class="header_opt_text">
+                         <h4>Get App</h4><p>Text "APP" to 36681</p>
+                    </div>
+               </button>
+               </div>
+        
+        
+               <div>
+                <button class="header_options2">
+                    <span style="color: white;" class="material-symbols-outlined">
+                        web_asset
+                        </span>
+                    <div class="header_opt_text">
+                         <h4>Sephora Credit Card Program</h4><p>Want 50% off?</p>
+                    </div>
+               </button>
+               </div>
+                
+            </div>
+    <br>
+            <div id="footer_mid">
+                <div>
+                    <h3 class="mid_foot_text">About Sephora</h3>
+                    <p class="mid_foot_text">About Sephora</p>
+                    <p class="mid_foot_text">Newsroom</p>
+                    <p class="mid_foot_text">Carees</p>
+                    <p class="mid_foot_text">Sephora Values</p>
+                    <p class="mid_foot_text">Supply Chain Transparency
+                    </p>
+                    <p class="mid_foot_text">Affiliates</p>
+                    <p class="mid_foot_text">Sephora Events</p>
+                    <p class="mid_foot_text">Gift Cards</p>
+                    <p class="mid_foot_text">Sephora Global Sites</p>
+                    <p class="mid_foot_text">Diversity, Equity & Inclusion</p>
+                    <p class="mid_foot_text">Checkout on Instagram</p>
+                    <p class="mid_foot_text">Sephora Accelerate</p>
+                    <p class="mid_foot_text">Report a Vulnerability</p>
                 </div>
-                <div class="media_box">
-                    <img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670__340.png" alt="">
+                <div>
+                    <h3 class="mid_foot_text">My sephora</h3>
+                    <p class="mid_foot_text">Beauty Insider
+                    </p>
+                    <p class="mid_foot_text">Sephora Credit Card</p>
+                    <p class="mid_foot_text">Community Profile</p>
+                    <p class="mid_foot_text">Order Status</p>
+                    <p class="mid_foot_text">Purchase History</p>
+                    <p class="mid_foot_text">Account Settings</p>
+                    <p class="mid_foot_text">Beauty Advisor Recommendations</p>
+                    <p class="mid_foot_text">Beauty Offers</p>
+                    <p class="mid_foot_text">Quizzes & Buying Guides</p>
+                    <p class="mid_foot_text">Rewards Bazaar
+                    </p>
+                    <p class="mid_foot_text">Loves</p>
+                    <p class="mid_foot_text">BOOK a Reservation</p>
                 </div>
-                <div class="media_box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgv2Su0x3ICDaY4RZjOlMXSmpbyPppVTMNFQ&usqp=CAU" alt="">
+                <div>
+                    <h3 class="mid_foot_text">Help</h3>
+                    <p class="mid_foot_text">Customer Service</p>
+                    <p class="mid_foot_text">Returns & Exchanges</p>
+                    <p class="mid_foot_text"></p>
+                    <p class="mid_foot_text">Shipping</p>
+                    <p class="mid_foot_text">Billing</p>
+                    <p class="mid_foot_text">International Shipments</p>
+                    <p class="mid_foot_text">Beauty Services FAQ</p>
+                    <p class="mid_foot_text">Sephora at Kohl's</p>
+                    <p class="mid_foot_text">Sephora Inside JCPenney</p>
+                    <p class="mid_foot_text">Store Locations</p>
+                    <p class="mid_foot_text">Online Ordering</p>
+                    <p class="mid_foot_text">Klarna & Afterpay</p>
+                    <p class="mid_foot_text">Accessibility</p>
+    
                 </div>
-                <div class="media_box">
-                    <img src="https://brandslogos.com/wp-content/uploads/images/youtube-icon-logo-vector.svg" alt="">
+                <div>
+                    <h1 style="margin: 200px;" class="mid_foot_text">We Belong to Something Beautiful</h1>
                 </div>
-                <div class="media_box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXcmv8z7sSaVE_vgjjPYTHmfYb6y9c2gkiGrJ4Htx9c9jdMqIsdx5Yhj4Pbryr5whvDQ&usqp=CAU" alt="">
+            </div>
+            <br>
+    
+            <div id="footer_bottom">
+                <div>
+                    <p class="bottom_foot">© 2022 Sephora USA, Inc. All rights reserved.</p>
+                    <p class="bottom_foot">Privacy Policy  Terms of Use   Accessibility  Sitemap  Your Privacy Choices</p>
+                    <p class="bottom_foot">1-877-737-4672    TTY: 1-888-866-9845</p>
                 </div>
-                <div class="media_box">
-                    <img src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-logo.png" alt="">
+                <div id="media">
+                    <div class="media_box">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemqOP0CmvkrYy554o_nJEyc2IddUbAVxMRQ&usqp=CAU" alt="">
+                    </div>
+                    <div class="media_box">
+                        <img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670__340.png" alt="">
+                    </div>
+                    <div class="media_box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgv2Su0x3ICDaY4RZjOlMXSmpbyPppVTMNFQ&usqp=CAU" alt="">
+                    </div>
+                    <div class="media_box">
+                        <img src="https://brandslogos.com/wp-content/uploads/images/youtube-icon-logo-vector.svg" alt="">
+                    </div>
+                    <div class="media_box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXcmv8z7sSaVE_vgjjPYTHmfYb6y9c2gkiGrJ4Htx9c9jdMqIsdx5Yhj4Pbryr5whvDQ&usqp=CAU" alt="">
+                    </div>
+                    <div class="media_box">
+                        <img src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-logo.png" alt="">
+                    </div>
+                    <div class="media_box">
+                        <img src="https://seeklogo.com//images/T/tiktok-app-icon-logo-0F5AD7AE01-seeklogo.com.png" alt="">
+                    </div>
+                 
                 </div>
-                <div class="media_box">
-                    <img src="https://seeklogo.com//images/T/tiktok-app-icon-logo-0F5AD7AE01-seeklogo.com.png" alt="">
-                </div>
-             
             </div>
         </div>
     </div>
-</div>
-
+    
 </body>
+<script>
+    let container = document.getElementById("bascket");
+    let carttotal = document.getElementById("cart_total");
+    let cartData = JSON.parse(localStorage.getItem("cart"));
+    if(cartData === null){
+        cartData = [];
+    }
+
+    displayProduct(cartData);
+    carttotal.innerText = cartData.length;
+
+
+
+     function displayProduct(data) {
+        container.innerHTML=null;
+        data.forEach((element,index) => {
+            let box = document.createElement("div")
+            box.setAttribute("class","card");
+            let avatar = document.createElement("img")
+            avatar.setAttribute("src",element.avatar)
+            let brand = document.createElement("h2")
+            brand.innerText = element.brand;
+            let price = document.createElement("h3")
+            price.innerText = element.price;
+            let details = document.createElement("p")
+            details.innerText = element.details;
+            let category = document.createElement("p")
+            details.innerText = element.category;
+
+            let remove = document.createElement("button");
+            remove.innerText = "remove";
+
+
+            remove.addEventListener("click",() =>{
+                Delete(element,index);
+            });
+
+            box.append(avatar,brand,price,details,category,remove);
+            container.append(box);
+        });
+        function Delete(element,index){
+
+            data.splice(index,1);
+            localStorage.setItem("favourites",JSON.stringify(cartData));
+            displayProduct(data);
+            carttotal.innerText = cartData.length;
+        }
+    }
+</script>
+
 </html>
